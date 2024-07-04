@@ -15,11 +15,11 @@ If you use the code hosted in this repository, please cite the following paper:
 }
 ```
 ## Contents
-* [Problem Definition](#problem-definition)
-* [Proposed Method](#proposed-method)
-* [Data](#data)
-* [Training](#training)
-* [Evaluate](#evaluate)
+* ❓[Problem Definition](#problem-definition)
+* ❗[Proposed Method](#proposed-method)
+* 🥽[Data](#data)
+* 🔃[Training](#training)
+* 🏅[Evaluate](#evaluate)
 
 # Problem Definition
 ![](https://github.com/fpv-iplab/synchronization-is-all-you-need/blob/main/assets/problem_definition.png?raw=true)
