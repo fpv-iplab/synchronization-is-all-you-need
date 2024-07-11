@@ -21,14 +21,14 @@ If you use the code hosted in this repository, please cite the following paper:
 * 🔃[Training](#training)
 * 🏅[Evaluate](#evaluate)
 
-# Problem Definition
+## Problem Definition
 ![](https://github.com/fpv-iplab/synchronization-is-all-you-need/blob/main/assets/problem_definition.png?raw=true)
-# Proposed Method
+## Proposed Method
 ![](https://github.com/fpv-iplab/synchronization-is-all-you-need/blob/main/assets/proposed_method.png?raw=true)
 
-# Data
+## Data
 
-# Training
+## Training
 
-# Evaluate
+## Evaluate
 
