@@ -38,9 +38,9 @@ with env.begin(write = True) as txn:
             img = transform(img)[:3].unsqueeze(0)
             img = img.to(device)
             
-            numero = i+1
-            numero_format = str(numero).zfill(10)
-            key = video.split('.')[0] + '_' + numero_format + '.jpg'
+            number = i+1
+            number_format = str(number).zfill(10)
+            key = video.split('.')[0] + '_' + number_format + '.jpg'
 
             if txn.get(key.encode('utf-8')) is not None:
                 print("Key ", key, "already in lmdb.")
