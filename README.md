@@ -27,6 +27,9 @@ If you use the code hosted in this repository, please cite the following paper:
 ![](https://github.com/fpv-iplab/synchronization-is-all-you-need/blob/main/assets/proposed_method.png?raw=true)
 
 ## Data
+The features used in this work were extracted using DINOv2 (dinov2_vitl14, dim=1024). Link to the DINOv2 repository: ![](https://github.com/facebookresearch/dinov2/tree/main)
+
+An example of code used to extract features is shown here: ![DINOv2_feature_extractor.py](https://github.com/fpv-iplab/synchronization-is-all-you-need/blob/main/DINOv2_feature_extractor.py)
 
 ## Training
 
