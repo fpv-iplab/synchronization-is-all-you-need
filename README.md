@@ -27,11 +27,32 @@ If you use the code hosted in this repository, please cite the following paper:
 ![](https://github.com/fpv-iplab/synchronization-is-all-you-need/blob/main/assets/proposed_method.png?raw=true)
 
 ## Data
-The features used in this work were extracted using DINOv2 (dinov2_vitl14, dim=1024). Link to the DINOv2 repository: ![](https://github.com/facebookresearch/dinov2/tree/main)
+Per-frame features are required as input. The features used in this work were extracted using DINOv2 (dinov2_vitl14, 1024-D). Link to the DINOv2 repository: [DINOv2](https://github.com/facebookresearch/dinov2/tree/main)
 
-An example of code used to extract features is shown here: ![DINOv2_feature_extractor.py](https://github.com/fpv-iplab/synchronization-is-all-you-need/blob/main/DINOv2_feature_extractor.py)
+Run [data/data_stat.py](https://github.com/fpv-iplab/synchronization-is-all-you-need/blob/main/data/data_stat.py) to generate data statistics for each video.
+
+An example of code used to extract features is shown here: [DINOv2_feature_extractor.py](https://github.com/fpv-iplab/synchronization-is-all-you-need/blob/main/DINOv2_feature_extractor.py)
 
 ## Training
+To evaluate the trained models, first replace the model and feature paths within the `main_{oracle/transfrormer/distillation}.py`, `transformer_and_distillation.py` e `dataset_{oracle/distillation}.py` codes.
+
+To train your model, run:
+```
+python main_{oracle/transfrormer/distillation}.py --action train --feature_path lmdb_path --split train
+```
+Or:
+```
+python transformer_and_distillation.py --action train --feature_path lmdb_path --split train
+```
 
 ## Evaluate
+To evaluate the trained models, first replace the model and feature paths within the `main_{oracle/transfrormer/distillation}.py`, `transformer_and_distillation.py` e `dataset_{oracle/distillation}.py` codes.
 
+To evaluate the trained models:
+```
+python main_{oracle/transfrormer/distillation}.py --action predict --feature_path lmdb_path --test_aug 0
+```
+Or:
+```
+python transformer_and_distillation.py --action predict --feature_path lmdb_path --test_aug 0
+```
