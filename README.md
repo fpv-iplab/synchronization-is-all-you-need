@@ -5,7 +5,7 @@ Camillo Quattrocchi, Antonino Furnari, Daniele Di Mauro, Mario Valerio Giuffrida
 
 The code in this repository is based on this repository: [Repository](https://github.com/assembly-101/assembly101-temporal-action-segmentation)
 
-If you use the code hosted in this repository, please cite the following paper:
+If you use the code hosted in this repository, please cite the following paper: 
 ```
 @article{quattrocchi2023synchronization,
   title={Synchronization is All You Need: Exocentric-to-Egocentric Transfer for Temporal Action Segmentation with Unlabeled Synchronized Video Pairs},
@@ -29,9 +29,9 @@ If you use the code hosted in this repository, please cite the following paper:
 ## Data
 Per-frame features are required as input. The features used in this work were extracted using DINOv2 (dinov2_vitl14, 1024-D). Link to the DINOv2 repository: [DINOv2](https://github.com/facebookresearch/dinov2/tree/main)
 
-Run [data/data_stat.py](https://github.com/fpv-iplab/synchronization-is-all-you-need/blob/main/data/data_stat.py) to generate data statistics for each video.
-
 An example of code used to extract features is shown here: [DINOv2_feature_extractor.py](https://github.com/fpv-iplab/synchronization-is-all-you-need/blob/main/DINOv2_feature_extractor.py)
+
+Run [data/data_stat.py](https://github.com/fpv-iplab/synchronization-is-all-you-need/blob/main/data/data_stat.py) to generate data statistics for each video.
 
 ## Training
 To evaluate the trained models, first replace the model and feature paths within the `main_{oracle/transfrormer/distillation}.py`, `transformer_and_distillation.py` e `dataset_{oracle/distillation}.py` codes.
