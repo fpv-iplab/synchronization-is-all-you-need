@@ -56,3 +56,5 @@ Or:
 ```
 python transformer_and_distillation.py --action predict --feature_path lmdb_path --test_aug 0
 ```
+## Ackowledgements
+This research has been supported by the project Future Artificial Intelligence Research (FAIR) – PNRR MUR Cod. PE0000013 - CUP: E63C22001940006
